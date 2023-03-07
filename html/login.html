@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="../photo/Favicon.ico">
+    <link rel="stylesheet" href="../css/style_login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід</title>
+</head>
+
+<body>
+    <header>
+        <ul class="name_login">
+            <li class="name">РЕСТОРАН АССА</li>
+            <li class="login link_menu">Війти</li>
+        </ul>
+        <ul class="menu">
+            <li><a href="../html/main.html"><img src="../photo/index.png" class="menuIcon"></a></li>
+            <li><a href="../html/aboutUs.html" class="link_menu">Про нас</a></li>
+            <li><a href="#" class="link_menu">Новини</a></li>
+            <li><a href="#" class="link_menu">Меню</a></li>
+            <li><a href="#" class="link_menu">Онлайн замовлення</a></li>
+            <li class="contacts"><a href="#" class="link_menu">Контакти</a>
+                <ul class="numbers">
+                    <li>+38 (067) 890-12-34</li>
+                    <li>+38 (095) 359-16-82</li>
+            </li>
+        </ul>
+    </header>
+    <div class="mainBox">
+        <form class="boxLogin">
+            <div class="mainTextLogin">Вхід</div>
+            <div class="inputs">
+                <input type="text" id="login" placeholder="Ім'я користувача" required title="Введіть ім'я користувача">
+                <input type="password" id="password" placeholder="Пароль" required title="Введіть пароль">
+            </div>
+            <div class="recoveryRegister">
+                <a href="#">Забули пароль?</a>
+                <a href="#">Зареєструватися</a>
+            </div>
+            <div class="buttonsReg">
+                <button type="submit" id="submit">Війти</button>
+                <button type="reset">Очистити поля</button>
+            </div>
+        </form>
+    </div>
+    <script src="../js/script_login.js"></script>
+</body>
+
+</html>
