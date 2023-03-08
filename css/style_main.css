@@ -307,3 +307,18 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 6vh;
 }
+
+/* СЛАЙДЕР */
+
+/* .photoDish {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.photoDish::before {
+    border: 1px solid #ef4b4d;
+    border-radius: 50%;
+    width: 20vw;
+} */
