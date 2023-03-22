@@ -26,15 +26,16 @@ function changeActiveMarker(newActiveSlide) {
 const markersListToTap = document.querySelector('.markers');
 markersListToTap.addEventListener('click', (e) => {
     if (e.target.closest('.marker')) {
-        if (e.srcElement.id == 0) {
+        const idClickMarker = parseInt(e.srcElement.id)
+        if (idClickMarker == 0) {
             slider.style.left = '60vw';
-        } else if (e.srcElement.id == sizeSlider - 1) {
-            slider.style.left = `${(e.srcElement.id - 1) * -60}vw`;
+        } else if (idClickMarker == sizeSlider - 1) {
+            slider.style.left = `${(idClickMarker - 1) * -60}vw`;
         } else {
-            slider.style.left = `${e.srcElement.id * 60 - 60}vw`;
+            slider.style.left = `${idClickMarker * 60 - 60}vw`;
         }
-        changeActiveMarker(e.srcElement.id);
-        numSlide = e.srcElement.id;
+        changeActiveMarker(idClickMarker);
+        numSlide = idClickMarker;
     }
 })
 
