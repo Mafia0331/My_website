@@ -15,7 +15,7 @@ header {
     padding: 0 10vw;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .name_login {
@@ -116,7 +116,7 @@ header {
 
 /* БОДИ СРАЗУ ПОСЛЕ МЕНЮ */
 
-body {
+.containerBG {
     background-image: url(../photo/bg_page.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -310,15 +310,65 @@ body {
 
 /* СЛАЙДЕР */
 
-/* .photoDish {
-    margin-left: 2vw;
-    display: flex;
-    flex-direction: row;
-
+.containerSlider {
+    width: 100%;
+    height: 100%;
 }
 
-.photoDish::before {
-    border: 1px solid #ef4b4d;
+.slider {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftButton,
+.rightButton {
+    cursor: pointer;
+    width: 5vw;
+}
+
+.containerPhoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    transition-duration: .7s;
+}
+
+.photos img {
+    width: 60vw;
+}
+
+.markers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.marker {
+    background-color: red;
     border-radius: 50%;
-    width: 20vw;
-} */
+    width: 15px;
+    height: 15px;
+    margin: 0 20px;
+    position: relative;
+    bottom: 30px;
+    transition-duration: .7s;
+}
+
+.marker.active {
+    background-color: #00C3AD;
+}
